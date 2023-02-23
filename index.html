@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
   </head>
   <body>
     <div class="container">
@@ -46,12 +47,91 @@
           </div>
         </div>
         <div class="toggle">
-            <i class="ri-menu-line"></i>
-            <i class="ri-add-line"></i>
+          <i class="ri-menu-line"></i>
+          <i class="ri-add-line"></i>
         </div>
       </div>
     </div>
 
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="home-left">
+          <div class="home-logo">
+            <h3>~ RundWeb</h3>
+          </div>
+          <div class="home-tittle">
+            <h1>The</h1>
+            <h1>Incridible</h1>
+            <h1>Web Developer</h1>
+          </div>
+          <div class="home-icon">
+            <a href=""><i class="ri-palette-line"></i> Web Design</a>
+            <a href=""><i class="ri-gallery-line"></i>UI/UX Experience</a>
+            <a href=""><i class="ri-code-s-slash-line"></i>Faster Code</a>
+          </div>
+          <div class="home-btn">
+            <a href=""
+              >View All Project <i class="ri-arrow-right-up-line"></i
+            ></a>
+          </div>
+        </div>
+        <div class="home-right">
+          <div class="home-project">
+            <div class="swiper home-cards">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="home-images">
+                    <img src="assets/images/1.jpg" alt="" class="home-img" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="home-images">
+                    <img src="assets/images/2.gif" alt="" class="home-img" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="home-images">
+                    <img src="assets/images/3.jpg" alt="" class="home-img" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="home-images">
+                    <img src="assets/images/4.jpg" alt="" class="home-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-thumbs">
+              <div class="">
+                <div class="">
+                  <div class="home-text-thumb">
+                    <div class="home-text-img">
+                      <h1>Project 1</h1>
+                      <p>Web Design</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="javascript/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".home-cards", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <script src="javascript/main.js"></script>
   </body>
 </html>

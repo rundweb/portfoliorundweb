@@ -532,6 +532,14 @@ img {
     width: 260px;
     height: 260px;
   }
+
+  .home-text-img h1{
+    font-size: 14px;
+  }
+
+  .home-text-img p{
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 390px) {

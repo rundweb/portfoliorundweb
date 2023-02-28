@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar RundWeb</title>
+    <title>RundWeb</title>
     <link rel="stylesheet" href="style/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
@@ -59,86 +59,92 @@
           <div class="home-logo">
             <h3>~ RundWeb</h3>
           </div>
-          <div class="home-tittle">
+          <div class="home-title">
             <h1>The</h1>
             <h1>Incridible</h1>
             <h1>Web Developer</h1>
           </div>
           <div class="home-icon">
-            <a href=""><i class="ri-palette-line"></i> Web Design</a>
-            <a href=""><i class="ri-gallery-line"></i>UI/UX Experience</a>
-            <a href=""><i class="ri-code-s-slash-line"></i>Faster Code</a>
+            <a href=""
+              ><i class="ri-palette-line"></i> Web <br />
+              Design</a
+            >
+            <a href=""
+              ><i class="ri-gallery-line"></i>UI/UX <br />
+              Experience</a
+            >
+            <a href=""
+              ><i class="ri-code-s-slash-line"></i>Faster <br />
+              Code</a
+            >
           </div>
           <div class="home-btn">
             <a href=""
-              >View All Project <i class="ri-arrow-right-up-line"></i
+              >View All Colections <i class="ri-arrow-right-up-line"></i
             ></a>
+          </div>
+          <div class="home-sosial">
+            <a href=""><i class="ri-github-fill"></i></a>
+            <a href=""><i class="ri-behance-fill"></i></a>
+            <a href=""><i class="ri-dribbble-line"></i></a>
           </div>
         </div>
         <div class="home-right">
-          <div class="home-project">
-            <div class="swiper home-cards">
+          <div class="home-right-content">
+            <div class="swiper home-img">
               <div class="swiper-wrapper">
                 <div class="swiper-slide radius">
-                  <div class="home-images">
-                    <img src="assets/images/1.jpg" alt="" class="home-img" />
+                  <div class="home-img-slides">
+                    <img src="assets/images/1.jpg" alt="" class="home-images" />
                   </div>
                 </div>
                 <div class="swiper-slide radius">
-                  <div class="home-images">
-                    <img src="assets/images/2.gif" alt="" class="home-img" />
+                  <div class="home-img-slides ">
+                    <img src="assets/images/2.gif" alt="" class="home-images" />
                   </div>
                 </div>
                 <div class="swiper-slide radius">
-                  <div class="home-images">
-                    <img src="assets/images/3.jpg" alt="" class="home-img" />
+                  <div class="home-img-slides">
+                    <img src="assets/images/3.jpg" alt="" class="home-images" />
                   </div>
                 </div>
                 <div class="swiper-slide radius">
-                  <div class="home-images">
-                    <img src="assets/images/4.jpg" alt="" class="home-img" />
+                  <div class="home-img-slides">
+                    <img src="assets/images/4.jpg" alt="" class="home-images" />
                   </div>
                 </div>
               </div>
             </div>
-            <div class="home-thumbs">
-              <div class="swiper home-thumb">
+            <div class="home-right-text">
+              <div class="swiper home-img-text">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="home-text-thumb">
-                      <div class="home-text-img">
-                        <h1>Project 1</h1>
-                        <p>Web Design</p>
-                      </div>
+                    <div class="home-img-title">
+                      <h5>Title Here 1</h5>
+                      <p>SubTitle Here</p>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="home-text-thumb">
-                      <div class="home-text-img">
-                        <h1>Project 2</h1>
-                        <p>Web Design</p>
-                      </div>
+                    <div class="home-img-title">
+                      <h5>Title Here 2</h5>
+                      <p>SubTitle Here</p>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="home-text-thumb">
-                      <div class="home-text-img">
-                        <h1>Project 3</h1>
-                        <p>Web Design</p>
-                      </div>
+                    <div class="home-img-title">
+                      <h5>Title Here 3</h5>
+                      <p>SubTitle Here</p>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="home-text-thumb">
-                      <div class="home-text-img">
-                        <h1>Project 4</h1>
-                        <p>Web Design</p>
-                      </div>
+                    <div class="home-img-title">
+                      <h5>Title Here 4</h5>
+                      <p>SubTitle Here</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="btn-swiper">
+              <div class="home-right-btn">
                 <div class="swiper-button-next">
                   <i class="ri-arrow-right-line"></i>
                 </div>
@@ -151,13 +157,10 @@
         </div>
       </div>
     </section>
+
     <script src="javascript/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".home-cards", {
-        // autoplay: {
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // },
+      var swiper = new Swiper(".home-img", {
         effect: "cards",
         grabCursor: true,
 
@@ -166,20 +169,13 @@
           prevEl: ".swiper-button-prev",
         },
       });
-
-      var swiperfade = new Swiper(".home-thumb", {
+      var swiperfade = new Swiper(".home-img-text", {
         effect: "flip",
-        // autoplay: {
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // },
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
+        grabCursor: true,
       });
 
       swiper.controller.control = swiperfade;
+      swiperfade.controller.control = swiper;
     </script>
     <script src="javascript/main.js"></script>
   </body>

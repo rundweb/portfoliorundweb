@@ -27,3 +27,21 @@ document.querySelectorAll("ul").forEach((n) => {
 btnToggle.addEventListener("click", function () {
   listActive.classList.toggle("list-active");
 });
+
+const tabs = document.querySelectorAll('.about-btn-tabs')
+const allContent = document.querySelectorAll('.content-tabs')
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener('click', function (e) {
+    tabs.forEach(t => {
+      t.classList.remove('active')
+    });
+    tab.classList.add('active')
+
+    
+
+    allContent.forEach(con => {con.classList.remove('active')})
+    allContent[index].classList.add('active')
+  })
+
+})

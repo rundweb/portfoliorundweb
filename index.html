@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RundWeb</title>
+    <!-- style.css -->
     <link rel="stylesheet" href="style/style.css" />
+
+    <!-- material icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- swiper css -->
     <link rel="stylesheet" href="style/swiper-bundle.min.css" />
   </head>
   <body>
+    <!-- navbar -->
     <div class="container">
       <div class="navbar">
         <div class="nav-logo">
@@ -52,7 +58,9 @@
         </div>
       </div>
     </div>
+    <!-- navbar end -->
 
+    <!-- home -->
     <section class="home" id="home">
       <div class="home-content">
         <div class="home-left">
@@ -157,8 +165,110 @@
         </div>
       </div>
     </section>
+    <!-- home end -->
 
+    <section class="about" id="about">
+      <div class="about-content">
+        <div class="about-top">
+          <div class="about-text-left">
+            <h1>Flexible. Eksklusif.</h1>
+            <h1>Special.</h1>
+          </div>
+          <div class="about-text-right">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              voluptatem, harum, aperiam debitis provident sint blanditiis nisi
+              libero soluta nihil quisquam placeat sit. Natus facilis
+              consequatur, quae ullam nemo ex?
+            </p>
+          </div>
+        </div>
+        <div class="about-bottom">
+          <div class="about-tabs">
+            <button class="about-btn-tabs active">
+              <i class="ri-palette-fill"></i>Web Design
+            </button>
+            <button class="about-btn-tabs">
+              <i class="ri-gallery-fill"></i>UI/UX Experience
+            </button>
+            <button class="about-btn-tabs">
+              <i class="ri-code-box-fill"></i>Faster Code
+            </button>
+            <button class="about-btn-tabs">
+              <i class="ri-collage-fill"></i>Responsive Web
+            </button>
+            
+          </div>
+          <div class="about-content-tabs">
+            <div class="content-tabs active">
+              <div class="content-tabs-left">
+                <h2>Web Design</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Placeat animi mollitia libero quod consequuntur eligendi
+                  quaerat quas quo sed fugit! Debitis sequi magni soluta totam
+                  ut laboriosam dicta praesentium sunt.
+                </p>
+                <a href="">Let's Talk</a>
+              </div>
+              <div class="content-tabs-right">
+                <img src="assets/images/tabs1.svg" alt="" class="tabs-img">
+              </div>
+            </div>
+            <div class="content-tabs">
+              <div class="content-tabs-left">
+                <h2>UI/UX Experience</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Placeat animi mollitia libero quod consequuntur eligendi
+                  quaerat quas quo sed fugit! Debitis sequi magni soluta totam
+                  ut laboriosam dicta praesentium sunt.
+                </p>
+                <a href="">Let's Talk</a>
+              </div>
+              <div class="content-tabs-right">
+                <img src="assets/images/tabs2.svg" alt="" class="tabs-img">
+              </div>
+            </div>
+            <div class="content-tabs">
+              <div class="content-tabs-left">
+                <h2>Faster Code</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Placeat animi mollitia libero quod consequuntur eligendi
+                  quaerat quas quo sed fugit! Debitis sequi magni soluta totam
+                  ut laboriosam dicta praesentium sunt.
+                </p>
+                <a href="">Let's Talk</a>
+              </div>
+              <div class="content-tabs-right">
+                <img src="assets/images/tabs4.svg" alt="" class="tabs-img">
+              </div>
+            </div>
+            <div class="content-tabs">
+              <div class="content-tabs-left">
+                <h2>Responsive Web</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Placeat animi mollitia libero quod consequuntur eligendi
+                  quaerat quas quo sed fugit! Debitis sequi magni soluta totam
+                  ut laboriosam dicta praesentium sunt.
+                </p>
+                <a href="">Let's Talk</a>
+              </div>
+              <div class="content-tabs-right">
+                <img src="assets/images/tabs3.svg" alt="" class="tabs-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- swiper js -->
     <script src="javascript/swiper-bundle.min.js"></script>
+
+    <!-- swiper for home -->
     <script>
       var swiper = new Swiper(".home-img", {
         effect: "cards",
@@ -177,6 +287,9 @@
       swiper.controller.control = swiperfade;
       swiperfade.controller.control = swiper;
     </script>
+    <!-- swiper for home end -->
+
+    <!-- main.js -->
     <script src="javascript/main.js"></script>
   </body>
 </html>
